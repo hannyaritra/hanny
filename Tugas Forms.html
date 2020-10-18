@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data diri</title>
+    <style>
+        table
+        {
+            color:darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <form action="daftar.php" method="POST">
+    <fieldset>
+        <table>
+        <legend>Akun</legend>
+            <tr>
+       <td> <label for="text"> Username</label></td>
+       <td> <input type="text" name="username"></td> <br>
+    </tr>
+    <tr>
+       <td> <label for="pass">Password</label></td>
+       <td> <input type="password" name="password" id="pass"><br></td>
+        </tr>
+        <tr>
+        <td><label for="cpass">Konfirmasi Password</label></td>
+       <td><input type="password" name="password" id="pass"></td>
+    </tr>
+    </table>
+</fieldset>
+    <fieldset>
+        <table>
+            <legend>Data</legend>
+            <tr>
+                <td><label for="text">Nama</label></td>
+                <td><input type="text" name="Nama"></td>
+            </tr>
+            <tr>
+                <td><label for="radio">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" name="gender">Laki-laki <br>
+                    <input type="radio" name="gender">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date">Tanggal Lahir</label></td>
+                <td><input type="date" name="tanggal lahir"></td>
+            </tr>
+            <tr>
+                <td><label for="checkbox">Hobi</label></td>
+                <td>
+                    <input type="checkbox" name="hobi1">Menyanyi <br>
+                    <input type="checkbox" name="hobi2">Melukis <br>
+                    <input type="checkbox" name="hobi3">Menari <br>
+                    <input type="checkbox" name="hobi4">Berenang
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <table>
+            <legend>Social Media</legend>
+            <tr>
+                <td><label for="select">Social Media</label></td> 
+                <td>
+                    <select name="Sosial media" id="" size="3">
+                    <option value="">&lt;&lt;Pilih Salah Satu &lt;&lt;</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Facebook">Facebook</option></select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="url">Link Social Media</label></td>
+                <td><input type="url"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <button type="submit">Daftar</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
